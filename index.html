@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XLR8 | Classic Motorcycle Showroom</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<span id="filterAnchor"></span>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top xlr8-nav">
+  <div class="container">
+    <a class="navbar-brand xlr8-brand" href="#home">XLR8</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#showroom">Showroom</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Available Bikes</a>
+          <ul class="dropdown-menu dropdown-menu-end xlr8-dropdown">
+            <li><a class="dropdown-item" href="#modalBike1" data-bs-toggle="modal" data-bs-target="#modalBike1">Harley-Davidson Knucklehead</a></li>
+            <li><a class="dropdown-item" href="#modalBike2" data-bs-toggle="modal" data-bs-target="#modalBike2">Vincent Black Shadow</a></li>
+            <li><a class="dropdown-item" href="#modalBike3" data-bs-toggle="modal" data-bs-target="#modalBike3">BMW R90S</a></li>
+            <li><a class="dropdown-item" href="#modalBike4" data-bs-toggle="modal" data-bs-target="#modalBike4">Indian Chief</a></li>
+            <li><a class="dropdown-item" href="#modalBike5" data-bs-toggle="modal" data-bs-target="#modalBike5">Triumph Bonneville T120</a></li>
+            <li><a class="dropdown-item" href="#modalBike6" data-bs-toggle="modal" data-bs-target="#modalBike6">Norton Commando 850</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#modalBike7" data-bs-toggle="modal" data-bs-target="#modalBike7">Honda CB750</a></li>
+            <li><a class="dropdown-item" href="#modalBike8" data-bs-toggle="modal" data-bs-target="#modalBike8">BMW R60/2</a></li>
+            <li><a class="dropdown-item" href="#modalBike9" data-bs-toggle="modal" data-bs-target="#modalBike9">Kawasaki Z1 900</a></li>
+            <li><a class="dropdown-item" href="#modalBike10" data-bs-toggle="modal" data-bs-target="#modalBike10">Ducati 750 SS</a></li>
+            <li><a class="dropdown-item" href="#modalBike11" data-bs-toggle="modal" data-bs-target="#modalBike11">Harley-Davidson Panhead</a></li>
+            <li><a class="dropdown-item" href="#modalBike12" data-bs-toggle="modal" data-bs-target="#modalBike12">Triumph Speed Twin</a></li>
+          </ul>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn xlr8-btn-accent" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="xlr8-hero">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-12 col-lg-6">
+        <span class="xlr8-eyebrow">XLR8 CLASSIC MOTORCYCLES</span>
+        <h1 class="xlr8-hero-title">Own a piece of <span class="xlr8-script">moto history</span></h1>
+        <p class="xlr8-hero-text">A curated showroom of restored classic motorcycles from Harley-Davidson, BMW, Triumph, Indian and more. Every machine is inspected, documented and ready to ride.</p>
+        <div class="xlr8-search row g-2">
+          <div class="col-12 col-sm-4">
+            <div class="dropdown">
+              <button class="btn xlr8-select dropdown-toggle w-100 text-start" type="button" data-bs-toggle="dropdown">
+                Select Type
+              </button>
+              <ul class="dropdown-menu xlr8-dropdown w-100">
+                <li><label class="dropdown-item" for="filterAll">All Types</label></li>
+                <li><label class="dropdown-item" for="filterCruiser">Cruiser</label></li>
+                <li><label class="dropdown-item" for="filterTouring">Touring</label></li>
+                <li><label class="dropdown-item" for="filterSport">Sport</label></li>
+                <li><label class="dropdown-item" for="filterStandard">Standard</label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <select class="form-select xlr8-select">
+              <option>Any Era</option>
+              <option>1930s &ndash; 1940s</option>
+              <option>1950s &ndash; 1960s</option>
+              <option>1970s</option>
+            </select>
+          </div>
+          <div class="col-12 col-sm-4">
+            <a href="#gallery" class="btn xlr8-btn-accent w-100">Search</a>
+          </div>
+        </div>
+        <div class="xlr8-brandrow d-flex flex-wrap gap-4 align-items-center">
+          <span>Harley-Davidson</span>
+          <span>BMW</span>
+          <span>Triumph</span>
+          <span>Indian</span>
+          <span>Vincent</span>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="xlr8-hero-imgwrap">
+          <img src="images/bike1.jpg" alt="Featured classic motorcycle" class="img-fluid xlr8-hero-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="xlr8-offer py-5">
+  <div class="container py-4">
+    <div class="row mb-4">
+      <div class="col-12 col-md-8">
+        <span class="xlr8-eyebrow">WHAT WE OFFER</span>
+        <h2 class="xlr8-h2">Everything you need to ride off happy</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="xlr8-offercard">
+          <i class="bi bi-tools"></i>
+          <h3>Certified Restoration</h3>
+          <p>Every motorcycle is inspected and restored to period-correct condition.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="xlr8-offercard">
+          <i class="bi bi-cash-coin"></i>
+          <h3>Flexible Financing</h3>
+          <p>Custom peso payment plans built around your budget and credit.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="xlr8-offercard">
+          <i class="bi bi-truck"></i>
+          <h3>Nationwide Delivery</h3>
+          <p>We crate and deliver your motorcycle straight to your garage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="xlr8-filter-scope">
+<section id="categories" class="xlr8-categories py-5">
+  <div class="container py-4">
+    <span class="xlr8-eyebrow">CATEGORIES</span>
+    <h2 class="xlr8-h2 mb-4">Shop by type</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-2">
+        <input type="radio" name="typeFilter" id="filterAll" class="xlr8-filter-radio" checked>
+        <label for="filterAll" class="xlr8-catchip"><i class="bi bi-grid"></i><span>All Bikes</span></label>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <input type="radio" name="typeFilter" id="filterCruiser" class="xlr8-filter-radio">
+        <label for="filterCruiser" class="xlr8-catchip"><i class="bi bi-compass"></i><span>Cruiser</span></label>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <input type="radio" name="typeFilter" id="filterTouring" class="xlr8-filter-radio">
+        <label for="filterTouring" class="xlr8-catchip"><i class="bi bi-map"></i><span>Touring</span></label>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <input type="radio" name="typeFilter" id="filterSport" class="xlr8-filter-radio">
+        <label for="filterSport" class="xlr8-catchip"><i class="bi bi-lightning-charge"></i><span>Sport</span></label>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <input type="radio" name="typeFilter" id="filterStandard" class="xlr8-filter-radio">
+        <label for="filterStandard" class="xlr8-catchip"><i class="bi bi-gear-wide-connected"></i><span>Standard</span></label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="xlr8-gallery py-5">
+  <div class="container py-4">
+    <span class="xlr8-eyebrow">THE LEGENDS</span>
+    <h2 class="xlr8-h2 mb-5">Explore the collection</h2>
+    <div class="row g-4">
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="cruiser">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike1">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike1.jpg" alt="Harley-Davidson Knucklehead" class="xlr8-card-img">
+              <span class="xlr8-tag">1000cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>Harley-Davidson Knucklehead</h3>
+              <p>Est. &#8369;6,500,000</p>
+              <p>140 km/h &middot; 1936</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>Harley-Davidson Knucklehead</h3>
+          <p>1936 &middot; 1000cc V-Twin</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="sport">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike2">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike2.jpg" alt="Vincent Black Shadow" class="xlr8-card-img">
+              <span class="xlr8-tag">998cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>Vincent Black Shadow</h3>
+              <p>Est. &#8369;9,800,000</p>
+              <p>200 km/h &middot; 1948</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>Vincent Black Shadow</h3>
+          <p>1948 &middot; 998cc V-Twin</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="sport">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike3">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike3.jpg" alt="BMW R90S" class="xlr8-card-img">
+              <span class="xlr8-tag">900cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>BMW R90S</h3>
+              <p>Est. &#8369;2,600,000</p>
+              <p>200 km/h &middot; 1973</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>BMW R90S</h3>
+          <p>1973 &middot; 900cc Boxer Twin</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="cruiser">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike4">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike4.jpg" alt="Indian Chief" class="xlr8-card-img">
+              <span class="xlr8-tag">1200cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>Indian Chief</h3>
+              <p>Est. &#8369;4,200,000</p>
+              <p>130 km/h &middot; 1947</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>Indian Chief</h3>
+          <p>1947 &middot; 1200cc V-Twin</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="standard">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike5">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike5.jpg" alt="Triumph Bonneville T120" class="xlr8-card-img">
+              <span class="xlr8-tag">649cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>Triumph Bonneville T120</h3>
+              <p>Est. &#8369;2,100,000</p>
+              <p>175 km/h &middot; 1959</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>Triumph Bonneville T120</h3>
+          <p>1959 &middot; 649cc Parallel Twin</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="sport">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike6">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike6.jpg" alt="Norton Commando 850" class="xlr8-card-img">
+              <span class="xlr8-tag">828cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>Norton Commando 850</h3>
+              <p>Est. &#8369;1,450,000</p>
+              <p>180 km/h &middot; 1975</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>Norton Commando 850</h3>
+          <p>1975 &middot; 828cc Parallel Twin</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="standard">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike7">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike7.jpg" alt="Honda CB750" class="xlr8-card-img">
+              <span class="xlr8-tag">736cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>Honda CB750</h3>
+              <p>Est. &#8369;1,900,000</p>
+              <p>200 km/h &middot; 1969</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>Honda CB750</h3>
+          <p>1969 &middot; 736cc Inline-Four</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="touring">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike8">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike8.jpg" alt="BMW R60/2" class="xlr8-card-img">
+              <span class="xlr8-tag">600cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>BMW R60/2</h3>
+              <p>Est. &#8369;1,350,000</p>
+              <p>140 km/h &middot; 1965</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>BMW R60/2</h3>
+          <p>1965 &middot; 600cc Boxer Twin</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="standard">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike9">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike9.jpg" alt="Kawasaki Z1 900" class="xlr8-card-img">
+              <span class="xlr8-tag">903cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>Kawasaki Z1 900</h3>
+              <p>Est. &#8369;2,300,000</p>
+              <p>210 km/h &middot; 1972</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>Kawasaki Z1 900</h3>
+          <p>1972 &middot; 903cc Inline-Four</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="sport">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike10">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike10.jpg" alt="Ducati 750 SS" class="xlr8-card-img">
+              <span class="xlr8-tag">748cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>Ducati 750 SS</h3>
+              <p>Est. &#8369;3,600,000</p>
+              <p>205 km/h &middot; 1974</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>Ducati 750 SS</h3>
+          <p>1974 &middot; 748cc V-Twin</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="cruiser">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike11">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike11.jpg" alt="Harley-Davidson Panhead" class="xlr8-card-img">
+              <span class="xlr8-tag">1200cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>Harley-Davidson Panhead</h3>
+              <p>Est. &#8369;5,100,000</p>
+              <p>145 km/h &middot; 1948</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>Harley-Davidson Panhead</h3>
+          <p>1948 &middot; 1200cc V-Twin</p>
+        </div>
+      </div>
+
+      <div class="xlr8-gallery-item col-12 col-sm-6 col-md-4 col-lg-3" data-type="standard">
+        <div class="xlr8-flip" data-bs-toggle="modal" data-bs-target="#modalBike12">
+          <div class="xlr8-flip-inner">
+            <div class="xlr8-flip-front">
+              <img src="images/bike12.jpg" alt="Triumph Speed Twin" class="xlr8-card-img">
+              <span class="xlr8-tag">498cc</span>
+            </div>
+            <div class="xlr8-flip-back">
+              <h3>Triumph Speed Twin</h3>
+              <p>Est. &#8369;1,800,000</p>
+              <p>150 km/h &middot; 1938</p>
+              <span class="xlr8-flip-cta">Tap to view details</span>
+            </div>
+          </div>
+        </div>
+        <div class="xlr8-card-body">
+          <h3>Triumph Speed Twin</h3>
+          <p>1938 &middot; 498cc Parallel Twin</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</div>
+
+<section id="showroom" class="xlr8-showroom py-5">
+  <div class="container py-4">
+    <span class="xlr8-eyebrow">SHOWROOM</span>
+    <h2 class="xlr8-h2 mb-4">Swipe through the full lineup</h2>
+  </div>
+  <div id="showroomCarousel" class="carousel slide xlr8-carousel" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="6"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="7"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="8"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="9"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="10"></button>
+      <button type="button" data-bs-target="#showroomCarousel" data-bs-slide-to="11"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/bike1.jpg" class="d-block w-100 xlr8-carousel-img" alt="Harley-Davidson Knucklehead">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>Harley-Davidson Knucklehead</h3>
+          <p>Est. &#8369;6,500,000 &middot; 1000cc &middot; 140 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike2.jpg" class="d-block w-100 xlr8-carousel-img" alt="Vincent Black Shadow">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>Vincent Black Shadow</h3>
+          <p>Est. &#8369;9,800,000 &middot; 998cc &middot; 200 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike3.jpg" class="d-block w-100 xlr8-carousel-img" alt="BMW R90S">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>BMW R90S</h3>
+          <p>Est. &#8369;2,600,000 &middot; 900cc &middot; 200 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike4.jpg" class="d-block w-100 xlr8-carousel-img" alt="Indian Chief">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>Indian Chief</h3>
+          <p>Est. &#8369;4,200,000 &middot; 1200cc &middot; 130 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike5.jpg" class="d-block w-100 xlr8-carousel-img" alt="Triumph Bonneville T120">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>Triumph Bonneville T120</h3>
+          <p>Est. &#8369;2,100,000 &middot; 649cc &middot; 175 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike6.jpg" class="d-block w-100 xlr8-carousel-img" alt="Norton Commando 850">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>Norton Commando 850</h3>
+          <p>Est. &#8369;1,450,000 &middot; 828cc &middot; 180 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike7.jpg" class="d-block w-100 xlr8-carousel-img" alt="Honda CB750">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>Honda CB750</h3>
+          <p>Est. &#8369;1,900,000 &middot; 736cc &middot; 200 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike8.jpg" class="d-block w-100 xlr8-carousel-img" alt="BMW R60/2">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>BMW R60/2</h3>
+          <p>Est. &#8369;1,350,000 &middot; 600cc &middot; 140 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike9.jpg" class="d-block w-100 xlr8-carousel-img" alt="Kawasaki Z1 900">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>Kawasaki Z1 900</h3>
+          <p>Est. &#8369;2,300,000 &middot; 903cc &middot; 210 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike10.jpg" class="d-block w-100 xlr8-carousel-img" alt="Ducati 750 SS">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>Ducati 750 SS</h3>
+          <p>Est. &#8369;3,600,000 &middot; 748cc &middot; 205 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike11.jpg" class="d-block w-100 xlr8-carousel-img" alt="Harley-Davidson Panhead">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>Harley-Davidson Panhead</h3>
+          <p>Est. &#8369;5,100,000 &middot; 1200cc &middot; 145 km/h</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/bike12.jpg" class="d-block w-100 xlr8-carousel-img" alt="Triumph Speed Twin">
+        <div class="carousel-caption xlr8-carousel-caption">
+          <h3>Triumph Speed Twin</h3>
+          <p>Est. &#8369;1,800,000 &middot; 498cc &middot; 150 km/h</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#showroomCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#showroomCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<section id="about" class="xlr8-about py-5">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      <div class="col-12 col-md-6">
+        <img src="images/bike1.jpg" alt="About XLR8" class="img-fluid rounded-4">
+      </div>
+      <div class="col-12 col-md-6">
+        <span class="xlr8-eyebrow">ABOUT XLR8</span>
+        <h2 class="xlr8-h2">Preserving motorcycle history since day one</h2>
+        <p class="xlr8-hero-text">XLR8 is the Philippines' showroom for classic and vintage motorcycles. From prewar Harley-Davidsons to European café racers, our team hand picks, restores and documents every machine before it reaches the floor.</p>
+        <div class="row g-3 mt-2">
+          <div class="col-6">
+            <h4 class="xlr8-stat">300+</h4>
+            <p class="xlr8-statlabel">Bikes restored</p>
+          </div>
+          <div class="col-6">
+            <h4 class="xlr8-stat">98%</h4>
+            <p class="xlr8-statlabel">Happy riders</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="xlr8-location py-5">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      <div class="col-12 col-lg-6">
+        <span class="xlr8-eyebrow">VISIT US</span>
+        <h2 class="xlr8-h2">Your ride starts today</h2>
+        <p class="xlr8-hero-text">Stop by the showroom for a walkthrough of the full collection, or book an online appointment with a restoration specialist.</p>
+        <ul class="xlr8-list">
+          <li><i class="bi bi-geo-alt"></i> 88 Motor Avenue, Calamba, Laguna</li>
+          <li><i class="bi bi-clock"></i> Mon - Sat, 9:00 AM - 7:00 PM</li>
+          <li><i class="bi bi-telephone"></i> +63 900 000 0000</li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="xlr8-mapbox">
+          <iframe class="xlr8-map-iframe" src="https://www.google.com/maps?q=Calamba,Laguna,Philippines&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="xlr8-contact py-5">
+  <div class="container py-4">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-12 col-md-8">
+        <span class="xlr8-eyebrow">CONTACT</span>
+        <h2 class="xlr8-h2">Talk to the XLR8 team</h2>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center mb-5">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="xlr8-offercard text-center">
+          <i class="bi bi-envelope"></i>
+          <h3>Email</h3>
+          <p>hello@xlr8motorcycles.com</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="xlr8-offercard text-center">
+          <i class="bi bi-telephone"></i>
+          <h3>Phone</h3>
+          <p>+63 900 000 0000</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="xlr8-offercard text-center">
+          <i class="bi bi-geo-alt"></i>
+          <h3>Showroom</h3>
+          <p>Calamba, Laguna</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <form class="xlr8-form row g-3" action="#contact" method="get">
+          <div class="col-12 col-sm-6">
+            <input type="text" name="fullname" class="form-control xlr8-input" placeholder="Full name" required minlength="2">
+          </div>
+          <div class="col-12 col-sm-6">
+            <input type="email" name="email" class="form-control xlr8-input" placeholder="name@gmail.com" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please use a gmail.com address, e.g. name@gmail.com" required>
+          </div>
+          <div class="col-12">
+            <textarea name="message" class="form-control xlr8-input" rows="4" placeholder="Your message" required minlength="5"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn xlr8-btn-accent w-100 w-sm-auto">Send message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="xlr8-footer py-5">
+  <div class="container py-3">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <a class="xlr8-brand" href="#home">XLR8</a>
+        <p class="xlr8-footer-text mt-2">Classic motorcycles, restored right. Priced in Philippine peso, built for the ride.</p>
+      </div>
+      <div class="col-6 col-md-2">
+        <h5>Explore</h5>
+        <ul class="xlr8-footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#showroom">Showroom</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h5>Company</h5>
+        <ul class="xlr8-footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <h5>Newsletter</h5>
+        <form class="input-group" action="#" method="get">
+          <input type="email" name="newsletter" class="form-control xlr8-input" placeholder="name@gmail.com" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please use a gmail.com address, e.g. name@gmail.com" required>
+          <button class="btn xlr8-btn-accent" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <hr class="xlr8-hr">
+    <p class="xlr8-footer-text mb-0">&copy; 2026 XLR8 Motorcycles. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="modal fade" id="modalBike1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Harley-Davidson Knucklehead</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike1.jpg" alt="Harley-Davidson Knucklehead" class="img-fluid rounded-3 mb-3">
+        <p>Introduced in 1936, the Knucklehead was Harley-Davidson's first overhead-valve big twin and the machine that defined the modern cruiser silhouette. This example carries its original tank badges and a hand-shift, foot-clutch driveline.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;6.5M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>140</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1936</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Vincent Black Shadow</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike2.jpg" alt="Vincent Black Shadow" class="img-fluid rounded-3 mb-3">
+        <p>Built from 1948, the Black Shadow was the fastest production motorcycle of its era, recognizable by its black-crackle engine finish and oversized 150 mph speedometer.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;9.8M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>200</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1948</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">BMW R90S</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike3.jpg" alt="BMW R90S" class="img-fluid rounded-3 mb-3">
+        <p>Launched in 1973, the R90S paired BMW's boxer twin with a distinctive smoked paint scheme and a small handlebar fairing, and went on to win the inaugural AMA Superbike season.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;2.6M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>200</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1973</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Indian Chief</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike4.jpg" alt="Indian Chief" class="img-fluid rounded-3 mb-3">
+        <p>The postwar Chief carried Indian's signature deep-skirted fenders and side-valve V-twin, and remains one of the most recognizable American cruisers of the 1940s.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;4.2M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>130</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1947</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike5" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Triumph Bonneville T120</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike5.jpg" alt="Triumph Bonneville T120" class="img-fluid rounded-3 mb-3">
+        <p>Named after Triumph's land-speed record runs at the Bonneville Salt Flats, the T120 combined a twin-carb parallel twin with the sharp lines that defined the British café racer look.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;2.1M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>175</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1959</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike6" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Norton Commando 850</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike6.jpg" alt="Norton Commando 850" class="img-fluid rounded-3 mb-3">
+        <p>The Commando's rubber-mounted Isolastic frame smoothed out its parallel twin, giving riders a fast and famously composed ride for a 1970s British roadster.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;1.45M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>180</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1975</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike7" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Honda CB750</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike7.jpg" alt="Honda CB750" class="img-fluid rounded-3 mb-3">
+        <p>Widely credited as the first modern superbike, the 1969 CB750 introduced an inline-four engine and a front disc brake to mainstream riders at an affordable price.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;1.9M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>200</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1969</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike8" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">BMW R60/2</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike8.jpg" alt="BMW R60/2" class="img-fluid rounded-3 mb-3">
+        <p>A staple of BMW's /2 series, the R60/2 was built for long-distance touring, with shaft drive and a smooth boxer twin that made it a favorite for sidecar duty too.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;1.35M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>140</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1965</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike9" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Kawasaki Z1 900</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike9.jpg" alt="Kawasaki Z1 900" class="img-fluid rounded-3 mb-3">
+        <p>The 1972 Z1 arrived with a twin-cam inline-four and was the fastest production motorcycle of its day, earning the nickname "King of Motorcycles."</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;2.3M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>210</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1972</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike10" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Ducati 750 SS</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike10.jpg" alt="Ducati 750 SS" class="img-fluid rounded-3 mb-3">
+        <p>Famous for its green-painted frame, the 750 SS used Ducati's desmodromic L-twin and dominated the 1972 Imola 200, cementing the brand's racing reputation.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;3.6M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>205</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1974</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike11" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Harley-Davidson Panhead</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike11.jpg" alt="Harley-Davidson Panhead" class="img-fluid rounded-3 mb-3">
+        <p>Successor to the Knucklehead, the Panhead introduced hydraulic valve lifters and pan-shaped rocker covers, and became the go-to platform for early custom builders.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;5.1M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>145</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1948</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBike12" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content xlr8-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Triumph Speed Twin</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/bike12.jpg" alt="Triumph Speed Twin" class="img-fluid rounded-3 mb-3">
+        <p>Debuting in 1938, the Speed Twin's compact parallel-twin layout set the template that most British motorcycles would follow for the next three decades.</p>
+        <div class="row text-center xlr8-modal-stats">
+          <div class="col-4"><strong>&#8369;1.8M</strong><span>Est. Value</span></div>
+          <div class="col-4"><strong>150</strong><span>km/h</span></div>
+          <div class="col-4"><strong>1938</strong><span>Year</span></div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn xlr8-btn-outline" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn xlr8-btn-accent" data-bs-dismiss="modal">Interested? Send us a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
